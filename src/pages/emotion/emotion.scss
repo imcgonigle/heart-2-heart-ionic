@@ -1,14 +1,21 @@
 page-emotion {
     .banner {
-        height: 20%;
         padding: 33px;
         font-size: 2rem;
         text-align: center;
-        background-color: #ffb;
-        box-shadow: 0 3px 6px #ddd;
+        color: #fefefe;
+        background-color: rgba(23, 25, 85, .8);
+    }
+    .segment-container {
+        width: 90%;
+        padding: 5px 20px 10px 20px;
+        margin: auto;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: rgba(50, 50, 50, .5);
     }
     .content-container {
         min-height: 100%;
-        background-color: #2424aa;
+        background: linear-gradient(to right, #347eff, #1ea3ff);
     }
 }
