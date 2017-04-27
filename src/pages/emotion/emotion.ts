@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EmotionPage {
   private title: string;
+  private mediaType: string = "videos";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.title = navParams.get('title');
