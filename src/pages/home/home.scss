@@ -8,53 +8,36 @@ page-home {
             width: 50%;
             .button-tile {
                 margin-left: 0px;
+                height: 33%;
             }
         }
         .buttons-left {
             width: 50%;
-        }
-        .relax {
-            height: 50%;
-            background-color: rgba(23, 25, 85, .8);
-        }
-        .emoji-game {
-            height: 50%;
-            background-color: rgba(23, 25, 85, .8);
-        }
-        .happy {
-            height: 33%;
-            background-color: rgba(23, 25, 85, .8);
-        }
-        .satisfying {
-            height: 33%;
-            background-color: rgba(23, 25, 85, .8);
-        }
-        .heart-rate {
-            height: 33%;
-            background-color: rgba(23, 25, 85, .8);
+            .button-tile {
+                height: 50%;
+            }
         }
         .button-tile {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
             margin: 8px;
             border-radius: 3px;
             font-size: 2rem;
+            background-color: rgba(23, 25, 85, .8);
             color: #fefefe;
+            .label {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                ion-icon {
+                    font-size: 10rem;
+                }
+            }
         }
     }
     ion-content {
         background: linear-gradient(to right, #347eff, #1ea3ff);
-    }
-    .button-tile {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .label {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        ion-icon {
-            font-size: 10rem;
-        }
     }
 }
