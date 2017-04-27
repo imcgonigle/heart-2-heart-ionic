@@ -1,42 +1,60 @@
 page-home {
     .button-container {
         width: 100%;
-        height: 90%;
+        height: 95%;
         display: flex;
         flex-direction: row;
         .buttons-right {
-            flex-grow: 1;
+            width: 50%;
             .button-tile {
                 margin-left: 0px;
             }
         }
         .buttons-left {
-            flex-grow: 1;
+            width: 50%;
         }
         .relax {
             height: 50%;
-            background: yellow;
+            background-color: rgba(23, 25, 85, .8);
         }
         .emoji-game {
             height: 50%;
-            background: blue;
+            background-color: rgba(23, 25, 85, .8);
         }
         .happy {
             height: 33%;
-            background: pink;
+            background-color: rgba(23, 25, 85, .8);
         }
         .satisfying {
             height: 33%;
-            background-color: green;
+            background-color: rgba(23, 25, 85, .8);
         }
         .heart-rate {
             height: 33%;
-            background-color: red;
+            background-color: rgba(23, 25, 85, .8);
         }
         .button-tile {
             margin: 8px;
             border-radius: 3px;
-            box-shadow: 1px 3px 6px #888;
+            font-size: 2rem;
+            color: #fefefe;
+        }
+    }
+    ion-content {
+        background: linear-gradient(to right, #347eff, #1ea3ff);
+    }
+    .button-tile {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .label {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        ion-icon {
+            font-size: 10rem;
         }
     }
 }

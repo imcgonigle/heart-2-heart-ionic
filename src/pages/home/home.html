@@ -10,13 +10,38 @@
 <ion-content padding>
     <div class="button-container">
         <div class="buttons-left">
-            <div class="relax button-tile" (click)="gotoEmotion('relaxing')">Relax</div>
-            <div class="emoji-game button-tile">Emoji</div>
+            <div class="relax button-tile" (click)="gotoEmotion('relaxing')">
+                <div class="label">
+                    <ion-icon name="cloudy-night"></ion-icon>
+                    Relax
+                </div>
+            </div>
+            <div class="emoji-game button-tile">
+                <div class="label">
+                    <ion-icon name="game-controller-a"></ion-icon>
+                    Emoji
+                </div>
+            </div>
         </div>
         <div class="buttons-right">
-            <div class="happy button-tile" (click)="gotoEmotion('happy')">Happy</div>
-            <div class="satisfying button-tile" (click)="gotoEmotion('satisfying')">Satisfying</div>
-            <div class="heart-rate button-tile">Heart Rate</div>
+            <div class="happy button-tile" (click)="gotoEmotion('happy')">
+                <div class="label">
+                    <ion-icon name="pizza"></ion-icon>
+                    Happy
+                </div>
+            </div>
+            <div class="satisfying button-tile" (click)="gotoEmotion('satisfying')">
+                <div class="label">
+                    <ion-icon name="planet"></ion-icon>
+                    Satisfying
+                </div>
+            </div>
+            <div class="heart-rate button-tile">
+                <div class="label">
+                    <ion-icon name="pulse"></ion-icon>
+                    Heart Rate
+                </div>
+            </div>
         </div>
     </div>
 </ion-content>
