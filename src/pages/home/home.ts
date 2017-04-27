@@ -11,13 +11,16 @@ export class HomePage {
 
   emotions: any = {
     happy: {
-      title: 'Happy'
+      title: 'Happy',
+      greeting: 'Check out some of the videos and pictures on this page. They\'re sure to brighten your day.'
     },
     relaxing: {
-      title: 'Relaxing'
+      title: 'Relaxing',
+      greeting: 'If you\'re trying to relax then you\'ve come to the right place.'
     },
     satisfying: {
-      title: 'Satisfying'
+      title: 'Satisfying',
+      greeting: 'You\'re sure to be satisfied after taking a look at the stuff we have for you here.'
     }
   }
 
