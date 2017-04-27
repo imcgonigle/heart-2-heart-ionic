@@ -13,11 +13,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'emotion.html',
 })
 export class EmotionPage {
-  private title: string;
   private mediaType: string = "videos";
+  private emotion: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.title = navParams.get('title');
+    this.emotion = navParams.get('emotion');
   }
 
   ionViewDidLoad() {

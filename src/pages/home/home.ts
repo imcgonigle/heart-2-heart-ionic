@@ -9,12 +9,24 @@ import { EmotionPage } from '../emotion/emotion';
 })
 export class HomePage {
 
+  emotions: any = {
+    happy: {
+      title: 'Happy'
+    },
+    relaxing: {
+      title: 'Relaxing'
+    },
+    satisfying: {
+      title: 'Satisfying'
+    }
+  }
+
   constructor(public navCtrl: NavController) {
 
   }
-  gotoEmotion(title: string): void {
+  gotoEmotion(emotion: string): void {
     this.navCtrl.push(EmotionPage, {
-      title: title
+      emotion: this.emotions[emotion]
     });
   }
 }
