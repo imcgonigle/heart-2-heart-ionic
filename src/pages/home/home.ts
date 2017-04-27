@@ -12,7 +12,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  gotoEmotion() {
-    this.navCtrl.push(EmotionPage);
+  gotoEmotion(title: string): void {
+    this.navCtrl.push(EmotionPage, {
+      title: title
+    });
   }
 }
