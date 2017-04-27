@@ -3,11 +3,18 @@ page-emotion {
         min-height: 100%;
         background: linear-gradient(to right, #347eff, #1ea3ff);
         .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 33px;
             font-size: 2rem;
             text-align: center;
             color: #fefefe;
-            background-color: rgba(23, 25, 85, .8);
+            background-color: rgba(50, 50, 50, .5);
+            img {
+                width: 28rem;
+                margin-bottom: 3rem;
+            }
         }
         .segment-container {
             width: 90%;
