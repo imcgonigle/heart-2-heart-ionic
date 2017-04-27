@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { Emotion } from './emotion';
+import { EmotionPage } from './emotion';
 
 @NgModule({
   declarations: [
-    Emotion,
+    EmotionPage,
   ],
   imports: [
-    IonicPageModule.forChild(Emotion),
+    IonicPageModule.forChild(EmotionPage),
   ],
   exports: [
-    Emotion
+    EmotionPage
   ]
 })
 export class EmotionModule {}

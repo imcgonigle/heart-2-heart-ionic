@@ -12,7 +12,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-emotion',
   templateUrl: 'emotion.html',
 })
-export class Emotion {
+export class EmotionPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
