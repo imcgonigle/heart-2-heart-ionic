@@ -14,54 +14,56 @@
 
 
 <ion-content>
-    <div class="banner">
-        {{emotion.greeting}}
-    </div>
-    <div padding>
-        <ion-segment [(ngModel)]="mediaType">
-            <ion-segment-button value="videos">
-                Videos
-            </ion-segment-button>
-            <ion-segment-button value="pictures">
-                Pictures
-            </ion-segment-button>
-        </ion-segment>
-    </div>
-    <div [ngSwitch]="mediaType">
-        <ion-grid *ngSwitchCase="'videos'">
-            <ion-row>
-                <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let video of emotion.videos">
-                    <ion-card>
+    <div class="content-container">
+        <div class="banner">
+            {{emotion.greeting}}
+        </div>
+        <div padding>
+            <ion-segment [(ngModel)]="mediaType">
+                <ion-segment-button value="videos">
+                    Videos
+                </ion-segment-button>
+                <ion-segment-button value="pictures">
+                    Pictures
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+        <div [ngSwitch]="mediaType">
+            <ion-grid *ngSwitchCase="'videos'">
+                <ion-row>
+                    <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let video of emotion.videos">
+                        <ion-card>
 
-                        <ion-card-header>
-                            {{video.title}}
-                        </ion-card-header>
+                            <ion-card-header>
+                                {{video.title}}
+                            </ion-card-header>
 
-                        <ion-card-content>
-                            <ion-icon name="film"></ion-icon>
-                        </ion-card-content>
+                            <ion-card-content>
+                                <ion-icon name="film"></ion-icon>
+                            </ion-card-content>
 
-                    </ion-card>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
 
-        <ion-grid *ngSwitchCase="'pictures'">
-            <ion-row>
-                <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let picture of emotion.pictures">
-                    <ion-card>
+            <ion-grid *ngSwitchCase="'pictures'">
+                <ion-row>
+                    <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let picture of emotion.pictures">
+                        <ion-card>
 
-                        <ion-card-header>
-                            {{picture.title}}
-                        </ion-card-header>
+                            <ion-card-header>
+                                {{picture.title}}
+                            </ion-card-header>
 
-                        <ion-card-content>
-                            <ion-icon name="images"></ion-icon>
-                        </ion-card-content>
+                            <ion-card-content>
+                                <ion-icon name="images"></ion-icon>
+                            </ion-card-content>
 
-                    </ion-card>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </div>
 </ion-content>

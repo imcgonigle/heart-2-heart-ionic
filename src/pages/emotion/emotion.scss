@@ -7,5 +7,8 @@ page-emotion {
         background-color: #ffb;
         box-shadow: 0 3px 6px #ddd;
     }
-    ion-content {}
+    .content-container {
+        min-height: 100%;
+        background-color: #2424aa;
+    }
 }
