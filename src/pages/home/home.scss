@@ -1,22 +1,37 @@
 page-home {
-    .relax {
-        height: 45vh;
-        background: yellow;
-    }
-    .emoji-game {
-        height: 45vh;
-        background: blue;
-    }
-    .happy {
-        height: 30vh;
+    .button-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
         background: pink;
-    }
-    .satisfying {
-        height: 30vh;
-        background-color: green;
-    }
-    .heartrate {
-        height: 30vh;
-        background-color: red;
+        .buttons-right {
+            height: 100%;
+            flex-grow: 1;
+            background: red;
+        }
+        .buttons-left {
+            flex-grow: 1;
+        }
+        .relax {
+            height: 50%;
+            background: yellow;
+        }
+        .emoji-game {
+            height: 50%;
+            background: blue;
+        }
+        .happy {
+            height: 33%;
+            background: pink;
+        }
+        .satisfying {
+            height: 33%;
+            background-color: green;
+        }
+        .heart-rate {
+            height: 33%;
+            background-color: red;
+        }
     }
 }
