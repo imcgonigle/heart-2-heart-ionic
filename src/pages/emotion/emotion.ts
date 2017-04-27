@@ -13,8 +13,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'emotion.html',
 })
 export class EmotionPage {
+  private title: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.title = navParams.get('title');
   }
 
   ionViewDidLoad() {
