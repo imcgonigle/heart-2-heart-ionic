@@ -7,16 +7,20 @@
 <ion-content>
     <ion-slides pager>
         <ion-slide *ngFor="let picture of pictures">
-            <img src="assets/images/happy.jpg" alt="Dummy Picture">
-            <h2 class="slide-title">{{picture.title}}</h2>
+            <div padding>
+                <img src="assets/images/happy.jpg" alt="Dummy Picture">
+                <h2 class="slide-title">{{picture.title}}</h2>
+            </div>
         </ion-slide>
         <ion-slide>
-            <img src="assets/images/emojis-128/cool.png" class="slide-image" />
-            <h2 class="slide-title">That's all folks!</h2>
-            <button ion-button large clear icon-left color="primary" (click)="popPage()">
-              <ion-icon name="arrow-back"></ion-icon>
-              Back to Pictures
-            </button>
+            <div class="slide-content-container">
+                <img src="assets/images/emojis-128/cool.png" class="slide-image" />
+                <h2 class="slide-title">That's all folks!</h2>
+                <button ion-button large clear icon-left color="primary" (click)="popPage()">
+                  <ion-icon name="arrow-back"></ion-icon>
+                  Back to Pictures
+                </button>
+            </div>
         </ion-slide>
     </ion-slides>
 </ion-content>

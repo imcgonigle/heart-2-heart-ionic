@@ -1,5 +1,10 @@
 page-picture-slides {
     ion-slide {
-        background-color: pink;
+        background: linear-gradient(to right, #347eff, #1ea3ff);
+        .slide-content-container {
+            padding: 2rem;
+            padding-bottom: 0;
+            background-color: rgba(50, 50, 50, .5);
+        }
     }
 }
