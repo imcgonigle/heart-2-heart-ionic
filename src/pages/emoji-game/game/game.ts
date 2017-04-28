@@ -44,6 +44,8 @@ export class GamePage {
   isGameStarted: boolean = false;
   currentEmojiIndex: number = 0;
 
+  options: number[] = [ 0, 0, 0, 0]
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -72,5 +74,35 @@ export class GamePage {
   startGame(): void {
     this.isGameStarted = true;
     this.currentEmojiIndex = Math.floor(Math.random() * this.emojis.length);
+    this.changeOptions();
+  }
+
+  changeOptions(): void {
+    this.options = [this.currentEmojiIndex];
+    while (this.options.length < 4) {
+      let randomNumber = Math.floor(Math.random() * this.emojis.length);
+      if (this.options.indexOf(randomNumber) < 0) {
+        this.options.push(randomNumber);
+      }
+    }
+    this.options = this.shuffle(this.options);
+    console.log(this.options)
+  }
+
+  shuffle(array: any[]): any[] {
+    let currentIndex = array.length;
+    let temporaryValue: any;
+    let randomIndex: number;
+
+    while(currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
   }
 }
