@@ -12,13 +12,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { EmotionPage } from '../pages/emotion/emotion';
 
 import { PictureSlidesPage } from '../pages/picture-slides/picture-slides'
+import { EmojiGamePage } from '../pages/emoji-game/emoji-game';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage
+    PictureSlidesPage,
+    EmojiGamePage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { PictureSlidesPage } from '../pages/picture-slides/picture-slides'
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage
+    PictureSlidesPage,
+    EmojiGamePage
   ],
   providers: [
     StatusBar,

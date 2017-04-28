@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { EmojiGame } from './emoji-game';
+import { EmojiGamePage } from './emoji-game';
 
 @NgModule({
   declarations: [
-    EmojiGame,
+    EmojiGamePage,
   ],
   imports: [
-    IonicPageModule.forChild(EmojiGame),
+    IonicPageModule.forChild(EmojiGamePage),
   ],
   exports: [
-    EmojiGame
+    EmojiGamePage
   ]
 })
 export class EmojiGameModule {}

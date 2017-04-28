@@ -12,7 +12,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-emoji-game',
   templateUrl: 'emoji-game.html',
 })
-export class EmojiGame {
+export class EmojiGamePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
