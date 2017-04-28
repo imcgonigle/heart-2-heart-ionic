@@ -44,7 +44,8 @@ export class GamePage {
   isGameStarted: boolean = false;
   currentEmojiIndex: number = 0;
 
-  options: number[] = [ 0, 0, 0, 0]
+  options: number[] = [ 0, 0, 0, 0];
+  playersPoints: number = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -73,8 +74,7 @@ export class GamePage {
 
   startGame(): void {
     this.isGameStarted = true;
-    this.currentEmojiIndex = Math.floor(Math.random() * this.emojis.length);
-    this.changeOptions();
+    this.newRound();
   }
 
   changeOptions(): void {
@@ -86,7 +86,6 @@ export class GamePage {
       }
     }
     this.options = this.shuffle(this.options);
-    console.log(this.options)
   }
 
   shuffle(array: any[]): any[] {
@@ -104,5 +103,17 @@ export class GamePage {
       array[randomIndex] = temporaryValue;
     }
     return array;
+  }
+
+  newRound():void {
+    this.currentEmojiIndex = Math.floor(Math.random() * this.emojis.length);
+    this.changeOptions();
+  }
+
+  optionSelected(index: number) {
+    if(this.currentEmojiIndex === index) {
+      this.playersPoints += 1;
+    }
+    this.newRound();
   }
 }
