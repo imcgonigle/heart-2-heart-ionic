@@ -10,6 +10,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { EmotionPage } from '../pages/emotion/emotion';
+import { EmotionProvider } from '../providers/emotion.provider';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { EmotionPage } from '../pages/emotion/emotion';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
