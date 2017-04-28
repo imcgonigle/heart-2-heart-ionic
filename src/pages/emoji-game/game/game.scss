@@ -53,8 +53,17 @@ ion-content {
             }
         }
         .game-over {
+            padding: 3rem;
+            width: 100%;
             * {
                 text-align: center;
+            }
+            .score {
+                margin-bottom: 10rem;
+                color: #f0f0f0;
+            }
+            button {
+                margin-top: 2rem;
             }
         }
     }
