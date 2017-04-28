@@ -31,13 +31,12 @@ export class EmotionPage {
     this.mediaType = 'videos';
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Emotion');
-  }
+  ionViewDidLoad() {}
 
-  showSlides(pictures: any[]): void {
+  showSlides(pictures: any[], index): void {
     this.navCtrl.push(PictureSlidesPage, {
-      pictures: pictures
+      pictures: pictures,
+      startSlide: index + 1
     });
   }
 

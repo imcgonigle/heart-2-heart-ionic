@@ -19,9 +19,7 @@ export class PictureSlidesPage {
     this.pictures = navParams.get('pictures');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PictureSlides');
-  }
+  ionViewDidLoad() {}
 
   popPage(): void{
     this.navCtrl.pop();
