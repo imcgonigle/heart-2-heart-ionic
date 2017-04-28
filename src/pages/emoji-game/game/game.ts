@@ -47,7 +47,7 @@ export class GamePage {
 
   options: number[] = [ 0, 0, 0, 0];
   playersScore: number = 0;
-  millisLeft: number = 15000;
+  millisLeft: number = 5000;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -77,7 +77,7 @@ export class GamePage {
   startGame(): void {
     this.isGameStarted = true;
     this.newRound();
-    this.timerCycle(100);
+    this.timerCycle(50);
   }
 
   changeOptions(): void {
@@ -129,5 +129,17 @@ export class GamePage {
         this.timerCycle(length);
       }
     }, length)
+  }
+
+  newGame() {
+    this.playersScore = 0;
+    this.millisLeft = 5000;
+    this.isGameOver = false;
+    this.newRound();
+    this.timerCycle(50);
+  }
+
+  goBack():void {
+    this.navCtrl.pop();
   }
 }

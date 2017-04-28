@@ -4,6 +4,9 @@ ion-content {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #347eff, #1ea3ff);
+    .text-danger {
+        color: #f53d3d;
+    }
     .game-info {
         width: 100%;
         display: flex;
@@ -47,6 +50,11 @@ ion-content {
                         margin: 1rem;
                     }
                 }
+            }
+        }
+        .game-over {
+            * {
+                text-align: center;
             }
         }
     }
