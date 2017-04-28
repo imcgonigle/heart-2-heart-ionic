@@ -1,5 +1,8 @@
 <ion-content padding>
     <div class="game-container">
+        <div *ngIf="isGameStarted" class="game-info">
+            <b>Score: {{playersScore}}</b>
+        </div>
         <div *ngIf="!isGameStarted" class="count-down">
             <h1>Starting In</h1>
             <h2>{{startInSeconds}}</h2>

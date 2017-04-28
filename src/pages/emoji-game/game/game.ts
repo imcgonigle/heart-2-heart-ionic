@@ -19,7 +19,7 @@ export class GamePage {
     'assets/images/emojis-128/blushing.png',
     'assets/images/emojis-128/cat-angry.png',
     'assets/images/emojis-128/cat-happy-tears.png',
-    'assets/images/emojis-128/cat-happy-eyes.png',
+    'assets/images/emojis-128/cat-heart-eyes.png',
     'assets/images/emojis-128/cat-shocked.png',
     'assets/images/emojis-128/cat-smirk.png',
     'assets/images/emojis-128/cat-tear.png',
@@ -45,7 +45,7 @@ export class GamePage {
   currentEmojiIndex: number = 0;
 
   options: number[] = [ 0, 0, 0, 0];
-  playersPoints: number = 0;
+  playersScore: number = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -112,7 +112,7 @@ export class GamePage {
 
   optionSelected(index: number) {
     if(this.currentEmojiIndex === index) {
-      this.playersPoints += 1;
+      this.playersScore += 1;
     }
     this.newRound();
   }

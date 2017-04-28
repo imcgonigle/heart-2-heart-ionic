@@ -4,6 +4,10 @@ ion-content {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #347eff, #1ea3ff);
+    .game-info {
+        align-self: flex-start;
+        color: #f0f0f0;
+    }
     .game-container {
         display: flex;
         flex-direction: column;
