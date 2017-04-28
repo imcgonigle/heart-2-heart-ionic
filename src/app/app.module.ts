@@ -12,28 +12,30 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { EmotionPage } from '../pages/emotion/emotion';
 
 import { PictureSlidesPage } from '../pages/picture-slides/picture-slides'
-import { EmojiGamePage } from '../pages/emoji-game/emoji-game';
+
+import { EmojiGameModule } from '../pages/emoji-game/emoji-game.module';
+import { GameModule } from '../pages/emoji-game/game/game.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage,
-    EmojiGamePage
+    PictureSlidesPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    EmojiGameModule,
+    GameModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage,
-    EmojiGamePage
+    PictureSlidesPage
   ],
   providers: [
     StatusBar,

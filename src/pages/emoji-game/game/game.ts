@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { GamePage } from './game/game';
 
 /**
  * Generated class for the EmojiGame page.
@@ -10,22 +9,14 @@ import { GamePage } from './game/game';
  */
 @IonicPage()
 @Component({
-  selector: 'page-emoji-game',
-  templateUrl: 'emoji-game.html',
+  selector: 'page-game',
+  templateUrl: 'game.html',
 })
-export class EmojiGamePage {
+export class GamePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {}
+  ionViewDidLoad() { console.log('gamePage loaded')}
 
-  goback(): void {
-    this.navCtrl.pop();
-  }
-
-  startGame(): void {
-    console.log('starting game!')
-    this.navCtrl.push(GamePage);
-  }
 }
