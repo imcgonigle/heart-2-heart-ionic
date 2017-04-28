@@ -23,4 +23,8 @@ export class PictureSlidesPage {
     console.log('ionViewDidLoad PictureSlides');
   }
 
+  popPage(): void{
+    this.navCtrl.pop();
+  }
+
 }
