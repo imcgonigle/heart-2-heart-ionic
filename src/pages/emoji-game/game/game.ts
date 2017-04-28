@@ -13,36 +13,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'game.html',
 })
 export class GamePage {
-
   emojis: any[] = [
-    'assets/images/emoji-128/blow-kiss.png',
-    'assets/images/emoji-128/blow.png',
-    'assets/images/emoji-128/blushing.png',
-    'assets/images/emoji-128/cat-angry.png',
-    'assets/images/emoji-128/cat-happy-tears.png',
-    'assets/images/emoji-128/cat-happy-eyes.png',
-    'assets/images/emoji-128/cat-shocked.png',
-    'assets/images/emoji-128/cat-smirk.png',
-    'assets/images/emoji-128/cat-tear.png',
-    'assets/images/emoji-128/cat-whistle.png',
-    'assets/images/emoji-128/clown.png',
-    'assets/images/emoji-128/cool.png',
-    'assets/images/emoji-128/cowboy.png',
-    'assets/images/emoji-128/crying-tears.png',
-    'assets/images/emoji-128/crying.png',
-    'assets/images/emoji-128/devil.png',
-    'assets/images/emoji-128/displeased.png',
-    'assets/images/emoji-128/down.png',
-    'assets/images/emoji-128/drooling.png',
-    'assets/images/emoji-128/excited.png',
-    'assets/images/emoji-128/eyes-closed.png',
-    'assets/images/emoji-128/frown-long.png',
-    'assets/images/emoji-128/frown.png',
-    'assets/images/emoji-128/happy-cat.png',
-    'assets/images/emoji-128/happy-hands.png',
+    'assets/images/emojis-128/blow-kiss.png',
+    'assets/images/emojis-128/blow.png',
+    'assets/images/emojis-128/blushing.png',
+    'assets/images/emojis-128/cat-angry.png',
+    'assets/images/emojis-128/cat-happy-tears.png',
+    'assets/images/emojis-128/cat-happy-eyes.png',
+    'assets/images/emojis-128/cat-shocked.png',
+    'assets/images/emojis-128/cat-smirk.png',
+    'assets/images/emojis-128/cat-tear.png',
+    'assets/images/emojis-128/cat-whistle.png',
+    'assets/images/emojis-128/clown.png',
+    'assets/images/emojis-128/cool.png',
+    'assets/images/emojis-128/cowboy.png',
+    'assets/images/emojis-128/crying-tears.png',
+    'assets/images/emojis-128/crying.png',
+    'assets/images/emojis-128/devil.png',
+    'assets/images/emojis-128/displeased.png',
+    'assets/images/emojis-128/down.png',
+    'assets/images/emojis-128/drooling.png',
+    'assets/images/emojis-128/excited.png',
+    'assets/images/emojis-128/eyes-closed.png',
+    'assets/images/emojis-128/frown-long.png',
+    'assets/images/emojis-128/frown.png',
+    'assets/images/emojis-128/happy-cat.png',
+    'assets/images/emojis-128/happy-hands.png',
   ]
-
   startInSeconds: number = 3;
+  isGameStarted: boolean = false;
+  currentEmojiIndex: number = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -70,6 +70,7 @@ export class GamePage {
   }
 
   startGame(): void {
-    console.log("Starting Game.");
+    this.isGameStarted = true;
+    this.currentEmojiIndex = Math.floor(Math.random() * this.emojis.length);
   }
 }

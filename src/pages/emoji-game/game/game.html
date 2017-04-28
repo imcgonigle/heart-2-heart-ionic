@@ -1,8 +1,11 @@
 <ion-content padding>
     <div class="game-container">
-        <div class="count-down">
+        <div *ngIf="!isGameStarted" class="count-down">
             <h1>Starting In</h1>
             <h2>{{startInSeconds}}</h2>
+        </div>
+        <div *ngIf="isGameStarted" class="game">
+            <img src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
         </div>
     </div>
 </ion-content>
