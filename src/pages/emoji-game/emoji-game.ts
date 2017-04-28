@@ -17,8 +17,9 @@ export class EmojiGamePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EmojiGame');
-  }
+  ionViewDidLoad() {}
 
+  goback(): void {
+    this.navCtrl.pop();
+  }
 }
