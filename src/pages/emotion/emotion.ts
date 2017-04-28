@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { EmotionProvider } from '../../providers/emotion.provider';
+
 /**
  * Generated class for the Emotion page.
  *
@@ -11,12 +13,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-emotion',
   templateUrl: 'emotion.html',
+  providers:[EmotionProvider]
 })
 export class EmotionPage {
   private mediaType: string;
   private emotion: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private emotionProvider: EmotionProvider
+  ) {
     this.emotion = navParams.get('emotion');
     this.mediaType = 'videos';
   }
