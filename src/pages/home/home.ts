@@ -13,6 +13,7 @@ export class HomePage {
     happy: {
       title: 'Happy',
       greeting: 'Check out some of the videos and pictures on this page. They\'re sure to brighten your day.',
+      imageUrl:'assets/images/emojis-128/cowboy.png',
       videos: [
         {title: 'Dog Playing'},
         {title: 'Baby Laughing'},
@@ -28,6 +29,7 @@ export class HomePage {
     relaxing: {
       title: 'Relaxing',
       greeting: 'If you\'re trying to relax then you\'ve come to the right place.',
+      imageUrl: 'assets/images/emojis-128/robot.png',
       videos: [
         {title: 'Floating on Clouds'},
         {title: 'The Waves Crashing'},
@@ -44,6 +46,7 @@ export class HomePage {
     satisfying: {
       title: 'Satisfying',
       greeting: 'You\'re sure to be satisfied after taking a look at the stuff we have for you here.',
+      imageUrl: 'assets/images/emojis-128/happy-hands.png',
       videos: [
         {title: 'Cutting the Cake'},
         {title: 'Skateboard Tricks'},
