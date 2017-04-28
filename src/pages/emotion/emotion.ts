@@ -3,12 +3,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { EmotionProvider } from '../../providers/emotion.provider';
 
+import { PictureSlidesPage } from '../picture-slides/picture-slides';
+
 /**
  * Generated class for the Emotion page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
+
 @IonicPage()
 @Component({
   selector: 'page-emotion',
@@ -30,6 +33,10 @@ export class EmotionPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Emotion');
+  }
+
+  showSlides() {
+    this.navCtrl.push(PictureSlidesPage);
   }
 
 }
