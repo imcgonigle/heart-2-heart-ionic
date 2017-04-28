@@ -8,7 +8,7 @@
     <ion-slides pager>
         <ion-slide *ngFor="let picture of pictures">
             <div padding>
-                <img src="assets/images/happy.jpg" alt="Dummy Picture">
+                <img src="{{ picture.imageUrl }}" alt="Dummy Picture">
                 <h2 class="slide-title">{{picture.title}}</h2>
             </div>
         </ion-slide>
