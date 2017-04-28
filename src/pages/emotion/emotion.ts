@@ -35,8 +35,10 @@ export class EmotionPage {
     console.log('ionViewDidLoad Emotion');
   }
 
-  showSlides() {
-    this.navCtrl.push(PictureSlidesPage);
+  showSlides(pictures: any[]): void {
+    this.navCtrl.push(PictureSlidesPage, {
+      pictures: pictures
+    });
   }
 
 }
