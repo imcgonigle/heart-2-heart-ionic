@@ -20,11 +20,11 @@ export class EmotionPage {
   private emotion: any;
 
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     private emotionProvider: EmotionProvider
   ) {
-    this.emotion = navParams.get('emotion');
+    this.emotion = this.emotionProvider.getEmotion(navParams.get('emotion'));
     this.mediaType = 'videos';
   }
 
