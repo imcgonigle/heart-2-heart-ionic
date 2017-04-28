@@ -22,9 +22,9 @@ export class EmotionProvider {
         {title: 'Christmas Party'}
       ],
       pictures: [
-        {title: 'The Beach'},
-        {title: 'Family'},
-        {title: 'Dancing'}
+        {title: 'The Beach', imageUrl: 'assets/images/emojis-128/sour.png'},
+        {title: 'Family', imageUrl: 'assets/images/emojis-128/clown.png'},
+        {title: 'Dancing', imageUrl: 'assets/images/emojis-128/cat-happy-tears.png'}
       ]
     },
     relaxing: {
@@ -39,9 +39,9 @@ export class EmotionProvider {
         {title: 'Bob Ross'}
       ],
       pictures: [
-        {title: 'Dogs Sleeping'},
-        {title: 'Mattress Sale'},
-        {title: 'Boat on the Ocean'}
+        {title: 'Dogs Sleeping', imageUrl: 'assets/images/emojis-128/drooling.png'},
+        {title: 'Mattress Sale', imageUrl: 'assets/images/emojis-128/eyes-closed.png'},
+        {title: 'Boat on the Ocean', imageUrl: 'assets/images/emojis-128/inhale.png'}
       ]
     },
     satisfying: {
@@ -55,10 +55,10 @@ export class EmotionProvider {
         {title: 'Magic Tricks'}
       ],
       pictures: [
-        {title: 'Space Ship'},
-        {title: 'Cakes'},
-        {title: 'Art'},
-        {title: 'Parachuting'}
+        {title: 'Space Ship', imageUrl: 'assets/images/emojis-128/laughing-tears-tilted.png'},
+        {title: 'Cakes', imageUrl: 'assets/images/emojis-128/silly.png'},
+        {title: 'Art', imageUrl: 'assets/images/emojis-128/smile-upsidedown.png'},
+        {title: 'Parachuting', imageUrl: 'assets/images/emojis-128/tongue-out-winking.png'}
       ]
     }
   }
