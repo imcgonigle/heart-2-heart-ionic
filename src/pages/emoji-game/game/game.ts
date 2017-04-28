@@ -42,9 +42,34 @@ export class GamePage {
     'assets/images/emoji-128/happy-hands.png',
   ]
 
+  startInSeconds: number = 3;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() { console.log('gamePage loaded')}
+  ionViewDidLoad() {
+    this.countDownToStartGame();
+  }
 
+  countDownToStartGame(): void {
+    setTimeout(() => {
+      this.startInSeconds = 2;
+    }, 1000)
+
+    setTimeout(() => {
+      this.startInSeconds = 1;
+    }, 2000)
+
+    setTimeout(() => {
+      this.startInSeconds = 0;
+    }, 3000)
+
+    setTimeout(() => {
+      this.startGame();
+    }, 3500)
+  }
+
+  startGame(): void {
+    console.log("Starting Game.");
+  }
 }
