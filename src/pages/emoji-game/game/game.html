@@ -1,14 +1,14 @@
 <ion-content padding>
-    <div *ngIf="isGameStarted" class="game-info">
-        <div>
-            <b>Score: {{playersScore}}</b>
-        </div>
-        <div>
-            <b *ngIf="!isGameOver">{{millisLeft}}</b>
-            <b *ngIf="isGameOver" class="text-danger">Game Over</b>
-        </div>
-    </div>
     <div class="game-container">
+        <div *ngIf="isGameStarted && !isGameOver" class="game-info">
+            <div>
+                <b>Score: {{playersScore}}</b>
+            </div>
+            <div>
+                <b *ngIf="!isGameOver">{{millisLeft}}</b>
+                <b *ngIf="isGameOver" class="text-danger">Game Over</b>
+            </div>
+        </div>
         <div *ngIf="!isGameStarted && !isGameOver" class="count-down">
             <h1>Starting In</h1>
             <h2>{{startInSeconds}}</h2>
@@ -23,7 +23,7 @@
         </div>
         <div *ngIf="isGameStarted && isGameOver" class="game-over">
             <h1 class="text-danger">Game Over</h1>
-            <h2>You Scored: {{playersScore}}</h2>
+            <h2 class="score">You Scored: {{playersScore}}</h2>
             <button ion-button block large color="secondary" (click)="newGame()">New Game</button>
             <button ion-button block large color="dark" (click)="goBack()">Back Home</button>
         </div>
