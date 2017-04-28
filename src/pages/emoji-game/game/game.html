@@ -6,6 +6,11 @@
         </div>
         <div *ngIf="isGameStarted" class="game">
             <img src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
+            <div class="options">
+                <div *ngFor="let option of options" class="option">
+                    <img src="{{emojis[option]}}" alt="Option {{option}}">
+                </div>
+            </div>
         </div>
     </div>
 </ion-content>
