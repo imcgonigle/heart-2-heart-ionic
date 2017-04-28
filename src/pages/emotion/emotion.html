@@ -46,7 +46,7 @@
                 <ion-row>
                     <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let picture of emotion.pictures">
                         <ion-card (click)="showSlides(emotion.pictures)">
-                            <img src="assets/images/happy.jpg" alt="">
+                            <img src="{{picture.imageUrl}}" alt="">
                             <ion-card-header text-center>
                                 {{picture.title}}
                             </ion-card-header>
