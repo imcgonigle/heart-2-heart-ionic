@@ -49,6 +49,8 @@ export class GamePage {
   playersScore: number = 0;
   millisLeft: number = 5000;
 
+  timeChange: number;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -116,6 +118,11 @@ export class GamePage {
   optionSelected(index: number) {
     if(this.currentEmojiIndex === index) {
       this.playersScore += 1;
+      this.millisLeft += 500;
+      this.timeChange = 500
+    } else {
+      this.millisLeft -= 250;
+      this.timeChange = -100;
     }
     this.newRound();
   }
@@ -128,7 +135,7 @@ export class GamePage {
       } else {
         this.timerCycle(length);
       }
-    }, length)
+    }, length);
   }
 
   newGame() {

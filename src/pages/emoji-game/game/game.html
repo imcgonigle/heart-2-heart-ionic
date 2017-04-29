@@ -7,6 +7,8 @@
             <div>
                 <b *ngIf="!isGameOver">{{millisLeft}}</b>
                 <b *ngIf="isGameOver" class="text-danger">Game Over</b>
+                <br>
+                <b *ngIf="timeChange" [style.color]="timeChange > 0 ? 'green' : 'red' ">{{timeChange}}</b>
             </div>
         </div>
         <div *ngIf="!isGameStarted && !isGameOver" class="count-down">
