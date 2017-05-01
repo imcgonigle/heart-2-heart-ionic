@@ -11,7 +11,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { EmotionPage } from '../pages/emotion/emotion';
 
-import { PictureSlidesPage } from '../pages/picture-slides/picture-slides'
+import { PictureSlidesPage } from '../pages/picture-slides/picture-slides';
+import { VideoPlayerPage } from '../pages/video-player/video-player';
 
 import { EmojiGameModule } from '../pages/emoji-game/emoji-game.module';
 import { GameModule } from '../pages/emoji-game/game/game.module';
@@ -21,7 +22,8 @@ import { GameModule } from '../pages/emoji-game/game/game.module';
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage
+    PictureSlidesPage,
+    VideoPlayerPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { GameModule } from '../pages/emoji-game/game/game.module';
     MyApp,
     HomePage,
     EmotionPage,
-    PictureSlidesPage
+    PictureSlidesPage,
+    VideoPlayerPage
   ],
   providers: [
     StatusBar,

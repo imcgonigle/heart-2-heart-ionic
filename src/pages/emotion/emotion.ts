@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EmotionProvider } from '../../providers/emotion.provider';
 
 import { PictureSlidesPage } from '../picture-slides/picture-slides';
+import { VideoPlayerPage } from '../video-player/video-player';
 
 /**
  * Generated class for the Emotion page.
@@ -38,6 +39,10 @@ export class EmotionPage {
       pictures: pictures,
       startSlide: index + 1
     });
+  }
+
+  playVideo(): void {
+    this.navCtrl.push(VideoPlayerPage);
   }
 
 }
