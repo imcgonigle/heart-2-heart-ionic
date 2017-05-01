@@ -21,4 +21,13 @@ export class VideoPlayerPage {
     console.log('ionViewDidLoad VideoPlayer');
   }
 
+  nextVideo(): void{
+    console.log('Go to next video');
+  }
+
+  previousVideo(): void{
+    console.log('Go to previous video');
+
+  }
+
 }

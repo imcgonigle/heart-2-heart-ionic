@@ -25,3 +25,12 @@
     background-color: rgba(50, 50, 50, .5);
     color: #f0f0f0;
 }
+
+.page-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+        width: 46%;
+    }
+}
