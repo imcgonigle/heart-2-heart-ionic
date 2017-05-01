@@ -17,13 +17,17 @@ import { VideoPlayerPage } from '../pages/video-player/video-player';
 import { EmojiGameModule } from '../pages/emoji-game/emoji-game.module';
 import { GameModule } from '../pages/emoji-game/game/game.module';
 
+// Pipes
+import { SafePipe } from '../pipes/safe.pipe';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     EmotionPage,
     PictureSlidesPage,
-    VideoPlayerPage
+    VideoPlayerPage,
+    SafePipe
   ],
   imports: [
     BrowserModule,
