@@ -28,7 +28,7 @@ export class EmotionPage {
     public navParams: NavParams,
     private emotionProvider: EmotionProvider
   ) {
-    this.emotion = this.emotionProvider.getEmotion(navParams.get('emotion'));
+    this.emotion = this.emotionProvider.getEmotion(this.navParams.get('emotion'));
     this.mediaType = 'videos';
   }
 
@@ -44,7 +44,9 @@ export class EmotionPage {
   playVideo(video: any, videoIndex: any): void {
     this.navCtrl.push(VideoPlayerPage, {
       video: video,
-      videoIndex: videoIndex
+      videoIndex: videoIndex,
+      emotion: this.navParams.get('emotion'),
+      maxIndex: this.emotion['videos'].length - 1
     });
   }
 

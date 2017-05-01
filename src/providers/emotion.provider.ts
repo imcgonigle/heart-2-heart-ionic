@@ -38,19 +38,19 @@ export class EmotionProvider {
           videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
         },
         {
-          title: 'Rainbow Breath',
-          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
-          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+          title: 'On & Off',
+          thumbnailUrl: 'assets/images/videos/relaxing/on-and-off.jpg',
+          videoUrl: 'https://www.youtube.com/embed/1ZP-TMr984s'
         },
         {
-          title: 'Rainbow Breath',
-          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
-          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+          title: 'Relaxation Music - 1 Hour Gentle Rain Meditation',
+          thumbnailUrl: 'assets/images/videos/relaxing/relaxation-music.jpg',
+          videoUrl: 'https://www.youtube.com/embed/zSZVonXN-VA'
         },
         {
-          title: 'Rainbow Breath',
-          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
-          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+          title: '4-7-8 Breathing Exercise by GoZen',
+          thumbnailUrl: 'assets/images/videos/relaxing/4-7-8-breathing-excercise.jpg',
+          videoUrl: 'https://www.youtube.com/embed/Uxbdx-SeOOo'
         },
         {
           title: 'Rainbow Breath',
@@ -93,9 +93,7 @@ export class EmotionProvider {
     }
   }
 
-  constructor(public http: Http) {
-    console.log('Hello Emotion Provider');
-  }
+  constructor(public http: Http) {}
 
   getEmotions(): any[] {
     return this.emotions;
