@@ -32,11 +32,41 @@ export class EmotionProvider {
       greeting: 'If you\'re trying to relax then you\'ve come to the right place.',
       imageUrl: 'assets/images/emojis-128/robot.png',
       videos: [
-        {title: 'Floating on Clouds', thumbnailUrl: 'assets/images/videos/relaxing/1.jpeg'},
-        {title: 'The Waves Crashing', thumbnailUrl: 'assets/images/videos/relaxing/2.jpeg'},
-        {title: 'A Pond', thumbnailUrl: 'assets/images/videos/relaxing/3.jpeg'},
-        {title: 'Floating Through Space', thumbnailUrl: 'assets/images/videos/relaxing/4.jpeg'},
-        {title: 'Bob Ross', thumbnailUrl: 'assets/images/videos/relaxing/5.jpeg'}
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        },
+        {
+          title: 'Rainbow Breath',
+          thumbnailUrl: 'assets/images/videos/relaxing/rainbow-breath.jpg',
+          videoUrl: 'https://www.youtube.com/embed/O29e4rRMrV4'
+        }
       ],
       pictures: [
         {title: 'Dogs Sleeping', imageUrl: 'assets/images/emojis-128/drooling.png'},
