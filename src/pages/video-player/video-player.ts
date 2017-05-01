@@ -14,14 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VideoPlayerPage {
   video: any;
+  videoIndex: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.video = navParams.get('video');
+    this.videoIndex = navParams.get('videoIndex');
   }
 
-  ionViewDidLoad() {
-    console.log(this.video.title);
-  }
+  ionViewDidLoad() {}
 
   nextVideo(): void{
     console.log('Go to next video');

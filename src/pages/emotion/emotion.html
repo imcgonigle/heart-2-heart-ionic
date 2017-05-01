@@ -31,8 +31,8 @@
         <div [ngSwitch]="mediaType">
             <ion-grid *ngSwitchCase="'videos'">
                 <ion-row>
-                    <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let video of emotion.videos">
-                        <ion-card (click)="playVideo(video)">
+                    <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let video of emotion.videos; let i = index;">
+                        <ion-card (click)="playVideo(video, i)">
                             <img src="{{video.thumbnailUrl}}" alt="">
                             <ion-card-header text-center>
                                 {{video.title}}

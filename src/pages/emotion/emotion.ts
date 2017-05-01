@@ -41,9 +41,10 @@ export class EmotionPage {
     });
   }
 
-  playVideo(video: any): void {
+  playVideo(video: any, videoIndex: any): void {
     this.navCtrl.push(VideoPlayerPage, {
-      video: video
+      video: video,
+      videoIndex: videoIndex
     });
   }
 
