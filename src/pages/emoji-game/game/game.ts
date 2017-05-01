@@ -47,9 +47,11 @@ export class GamePage {
 
   options: number[] = [ 0, 0, 0, 0];
   playersScore: number = 0;
-  millisLeft: number = 5000;
+  millisLeft: number;
+  roundLength: number = 5000;
 
   timeChange: number;
+  cycleLength: number = 50;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -77,9 +79,10 @@ export class GamePage {
   }
 
   startGame(): void {
+    this.millisLeft = this.roundLength;
     this.isGameStarted = true;
     this.newRound();
-    this.timerCycle(50);
+    this.timerCycle(this.cycleLength);
   }
 
   changeOptions(): void {
@@ -118,8 +121,8 @@ export class GamePage {
   optionSelected(index: number) {
     if(this.currentEmojiIndex === index) {
       this.playersScore += 1;
-      this.millisLeft += 500;
-      this.timeChange = 500
+      this.millisLeft += 800;
+      this.timeChange = 800;
     } else {
       this.millisLeft -= 250;
       this.timeChange = -100;
@@ -140,10 +143,10 @@ export class GamePage {
 
   newGame() {
     this.playersScore = 0;
-    this.millisLeft = 5000;
+    this.millisLeft = this.roundLength;
     this.isGameOver = false;
     this.newRound();
-    this.timerCycle(50);
+    this.timerCycle(this.cycleLength);
   }
 
   goBack():void {
