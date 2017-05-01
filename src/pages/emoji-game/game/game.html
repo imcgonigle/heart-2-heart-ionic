@@ -16,7 +16,7 @@
             <h2>{{startInSeconds}}</h2>
         </div>
         <div *ngIf="isGameStarted && !isGameOver" class="game">
-            <img class="current-emoji" src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
+            <img src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
             <div class="options">
                 <div *ngFor="let option of options" class="option" (click)="optionSelected(option)">
                     <img src="{{emojis[option]}}" alt="Option {{option}}">
