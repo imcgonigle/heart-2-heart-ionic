@@ -49,6 +49,8 @@ export class GamePage {
   playersScore: number = 0;
   millisLeft: number;
   roundLength: number = 5000;
+  millisGainedIfCorrect: number = 650;
+  millisLostIfWrong: number = 200;
 
   timeChange: number;
   cycleLength: number = 50;
@@ -121,11 +123,11 @@ export class GamePage {
   optionSelected(index: number) {
     if(this.currentEmojiIndex === index) {
       this.playersScore += 1;
-      this.millisLeft += 800;
-      this.timeChange = 800;
+      this.millisLeft += this.millisGainedIfCorrect;
+      this.timeChange = this.millisGainedIfCorrect;
     } else {
-      this.millisLeft -= 250;
-      this.timeChange = -100;
+      this.millisLeft -= this.millisLostIfWrong;
+      this.timeChange = -this.millisLostIfWrong;
     }
     this.newRound();
   }
