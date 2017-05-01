@@ -16,7 +16,7 @@
             <h2>{{startInSeconds}}</h2>
         </div>
         <div *ngIf="isGameStarted && !isGameOver" class="game">
-            <img src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
+            <img class="current-emoji" src="{{emojis[currentEmojiIndex]}}" alt="Guess this emoji.">
             <div class="options">
                 <div *ngFor="let option of options" class="option" (click)="optionSelected(option)">
                     <img src="{{emojis[option]}}" alt="Option {{option}}">
@@ -27,7 +27,7 @@
             <h1 class="text-danger">Game Over</h1>
             <h2 class="score">You Scored: {{playersScore}}</h2>
             <button ion-button block large color="secondary" (click)="newGame()">New Game</button>
-            <button ion-button block large color="dark" (click)="goBack()">Back Home</button>
+            <button ion-button block large color="dark" (click)="goBack()">Back</button>
         </div>
     </div>
 </ion-content>
