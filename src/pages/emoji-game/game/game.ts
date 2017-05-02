@@ -152,6 +152,6 @@ export class GamePage {
   }
 
   goBack():void {
-    this.navCtrl.pop();
+    this.navCtrl.popToRoot();
   }
 }
