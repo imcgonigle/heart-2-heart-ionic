@@ -16,6 +16,7 @@ import { VideoPlayerPage } from '../pages/video-player/video-player';
 
 import { EmojiGameModule } from '../pages/emoji-game/emoji-game.module';
 import { GameModule } from '../pages/emoji-game/game/game.module';
+import { TitleModule } from '../pages/title/title.module';
 
 // Pipes
 import { SafePipe } from '../pipes/safe.pipe';
@@ -34,7 +35,8 @@ import { SafePipe } from '../pipes/safe.pipe';
     IonicModule.forRoot(MyApp),
     HttpModule,
     EmojiGameModule,
-    GameModule
+    GameModule,
+    TitleModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
