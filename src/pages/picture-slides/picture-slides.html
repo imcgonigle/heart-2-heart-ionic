@@ -7,8 +7,9 @@
 <ion-content>
     <ion-slides pager>
         <ion-slide *ngFor="let picture of pictures">
+            <ion-icon class="exit" (click)="popPage()" name="close"></ion-icon>
             <div padding>
-                <img src="{{ picture.imageUrl }}" alt="Dummy Picture">
+                <img src="{{ picture.imageUrl }}" alt="{{picture.title}}">
                 <h2 class="slide-title">{{picture.title}}</h2>
             </div>
         </ion-slide>
