@@ -3,14 +3,15 @@
         <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-        <ion-title>Heart 2 Heart</ion-title>
+        <ion-title><span class="app-title">Heart<span class="title-two">2</span>Heart</span>
+        </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="home-page">
     <div class="button-container">
         <div class="buttons-left">
-            <div class="relax button-tile" (click)="gotoEmotion('relaxing')">
+            <div class="relax button-tile green-button" (click)="gotoEmotion('relaxing')">
                 <div class="label">
                     <ion-icon name="cloudy-night"></ion-icon>
                     Relax
@@ -24,13 +25,13 @@
             </div>
         </div>
         <div class="buttons-right">
-            <div class="happy button-tile" (click)="gotoEmotion('happy')">
+            <div class="happy button-tile pink-button" (click)="gotoEmotion('happy')">
                 <div class="label">
                     <ion-icon name="pizza"></ion-icon>
                     Happy
                 </div>
             </div>
-            <div class="satisfying button-tile" (click)="gotoEmotion('satisfying')">
+            <div class="satisfying button-tile orange-button" (click)="gotoEmotion('satisfying')">
                 <div class="label">
                     <ion-icon name="planet"></ion-icon>
                     Satisfying
