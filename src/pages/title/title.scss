@@ -7,9 +7,8 @@ page-title {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            padding: 2rem;
-            border-radius: 1rem;
-            background-color: rgba(255, 255, 255, .9);
+            padding: 5.5rem;
+            background-color: rgba(40, 40, 40, .9);
         }
     }
     .app-title {
@@ -19,6 +18,6 @@ page-title {
     .title-two {
         font-size: 3.4rem;
         font-weight: bold;
-        color: rgb(255, 0, 149);
+        color: #AE2542;
     }
 }
