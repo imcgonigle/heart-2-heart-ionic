@@ -32,5 +32,8 @@ page-emotion {
             border-bottom-left-radius: 5px;
             background-color: rgba(50, 50, 50, .5);
         }
+        .picture-card>img {
+            height: 15vh;
+        }
     }
 }
