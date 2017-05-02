@@ -29,7 +29,6 @@ export class GamePage {
     'assets/images/emojis-128/cowboy.png',
     'assets/images/emojis-128/crying-tears.png',
     'assets/images/emojis-128/crying.png',
-    'assets/images/emojis-128/devil.png',
     'assets/images/emojis-128/displeased.png',
     'assets/images/emojis-128/down.png',
     'assets/images/emojis-128/drooling.png',
@@ -48,8 +47,8 @@ export class GamePage {
   options: number[] = [ 0, 0, 0, 0];
   playersScore: number = 0;
   millisLeft: number;
-  roundLength: number = 5000;
-  millisGainedIfCorrect: number = 650;
+  roundLength: number = 2000;
+  millisGainedIfCorrect: number = 750;
   millisLostIfWrong: number = 200;
 
   timeChange: number;
