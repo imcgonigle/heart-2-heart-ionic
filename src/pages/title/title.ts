@@ -17,8 +17,10 @@ export class TitlePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Title');
+  ionViewDidLoad() {}
+
+  getStartedClicked() {
+    this.navCtrl.pop();
   }
 
 }
