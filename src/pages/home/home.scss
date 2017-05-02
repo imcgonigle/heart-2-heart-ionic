@@ -1,20 +1,27 @@
 page-home {
     .button-container {
         width: 100%;
-        height: 95%;
+        height: 100%;
+        padding: 8px;
         display: flex;
         flex-direction: row;
         .buttons-right {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             width: 50%;
             .button-tile {
-                height: 33%;
                 margin-left: 0px;
+                flex-grow: 1;
             }
         }
         .buttons-left {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             width: 50%;
             .button-tile {
-                height: 50%;
+                flex-grow: 1;
             }
         }
         .button-tile {
@@ -22,7 +29,7 @@ page-home {
             justify-content: center;
             align-content: center;
             align-items: center;
-            margin: 8px;
+            margin: 4px 8px;
             border-radius: 3px;
             font-size: 2rem;
             background-color: rgba(23, 25, 85, .8);
