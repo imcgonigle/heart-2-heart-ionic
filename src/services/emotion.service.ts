@@ -13,7 +13,7 @@ import { HAPPY_PICTURES, RELAXING_PICTURES, SATISFYING_PICTURES } from '../data/
   for more info on providers and Angular 2 DI.
 */
 @Injectable()
-export class EmotionProvider {
+export class EmotionService {
   emotions: any = {
     happy: {
       title: 'Happy',

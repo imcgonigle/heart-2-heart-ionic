@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { EmotionProvider } from '../../providers/emotion.provider';
+import { EmotionService } from '../../services/emotion.service';
 
 import { PictureSlidesPage } from '../picture-slides/picture-slides';
 import { VideoPlayerPage } from '../video-player/video-player';
@@ -17,7 +17,7 @@ import { VideoPlayerPage } from '../video-player/video-player';
 @Component({
   selector: 'page-emotion',
   templateUrl: 'emotion.html',
-  providers:[EmotionProvider]
+  providers:[EmotionService]
 })
 export class EmotionPage {
   private mediaType: string;
@@ -26,9 +26,9 @@ export class EmotionPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private emotionProvider: EmotionProvider
+    private emotionService: EmotionService
   ) {
-    this.emotion = this.emotionProvider.getEmotion(this.navParams.get('emotion'));
+    this.emotion = this.emotionService.getEmotion(this.navParams.get('emotion'));
     this.mediaType = 'videos';
   }
 
